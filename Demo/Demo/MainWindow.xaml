@@ -12,7 +12,7 @@
             <Button x:Name="button"  Margin="10" Width="100"  Height="23" Content="Bind" Click="button_Click"/>
             <TextBlock x:Name="textBlock" Margin="10" Width="100"  Height="50" TextWrapping="Wrap" Text="{Binding Path=Text, ElementName=textBox}"/>
             <ProgressBar Height="10" Margin="10" Width="100" Value="{Binding Value, ElementName=slider}"/>
-            <Slider x:Name="slider" Margin="10" Width="100" Maximum="100"/>
+            <Slider x:Name="slider" Margin="10" Width="100" Maximum="100" Value="{Binding Text, ElementName=textBox1, Mode=TwoWay}"/>
             <TextBox x:Name="textBox1"  Margin="10" Width="100" Height="23" TextWrapping="Wrap" Text="{Binding Value, ElementName=slider, Mode=TwoWay}"/>
             <!--   -->
         </StackPanel>
