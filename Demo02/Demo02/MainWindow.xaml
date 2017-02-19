@@ -1,0 +1,22 @@
+﻿<Window x:Class="Demo02.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Demo02"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <StackPanel>
+        <StackPanel Orientation="Vertical">
+            <TextBlock x:Name="teksti" HorizontalAlignment="Left" Height="23" Margin="10" TextWrapping="Wrap" Text="{Binding Path=Nimi}" FontSize="18" VerticalAlignment="Top" Width="120"/>
+            <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Height="23" Margin="10" Width="120" TextWrapping="Wrap" Text=""/>
+            <!-- {x:Bind person.Firstname} -->
+        </StackPanel>
+        <StackPanel x:Name="spPerson">
+            <TextBlock x:Name="textFname" HorizontalAlignment="Left" Height="23" Margin="10" Width="120" TextWrapping="Wrap" Text="{Binding Firstname}"/>
+            <TextBlock x:Name="textLname" HorizontalAlignment="Left" Height="23" Margin="10" Width="120" TextWrapping="Wrap" Text="{Binding Lastname}"/>
+        </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>
