@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Demo"
         mc:Ignorable="d"
-        Title="Demo" Height="350" Width="200">
+        Title="Demo" Height="450" Width="200">
     <Grid>
         <StackPanel>
             <TextBox x:Name="textBox" Margin="10" Width="100"  Height="23" TextWrapping="Wrap" Text=""/>
@@ -14,6 +14,7 @@
             <ProgressBar Height="10" Margin="10" Width="100" Value="{Binding Value, ElementName=slider}"/>
             <Slider x:Name="slider" Margin="10" Width="100" Maximum="100" Value="{Binding Text, ElementName=textBox1, Mode=TwoWay}"/>
             <TextBox x:Name="textBox1"  Margin="10" Width="100" Height="23" TextWrapping="Wrap" Text="{Binding Value, ElementName=slider, Mode=TwoWay}"/>
+            <TextBlock x:Name="teksti"  Margin="10" Width="100" Height="56" TextWrapping="Wrap" Text=""/>
             <!--   -->
         </StackPanel>
     </Grid>
